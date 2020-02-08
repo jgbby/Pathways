@@ -1,0 +1,112 @@
+
+
+
+/* Background */
+.background {
+    position: relative;
+    background-image: radial-gradient(#d1d1d1, #E5E5E5, black);
+}
+
+/* Front Page & Logo */
+.s1 h1 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 91px;
+    letter-spacing: 0.25em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.credit {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 500%);
+}
+
+.path {
+    transform: translate(-190%, -160%);
+}
+
+.way {
+    transform: translate(90%, -120%);
+}
+
+/* Logo Styling */
+
+.logo {
+    height: 40px;
+    width: 100px;
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+
+    z-index: 10;
+}
+
+.fig {
+    height: 440px;
+    width: 440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+
+/* Nav Bar */
+
+nav {
+    width: 100vw;
+}
+
+nav ul {
+    margin-top: 3vh;
+    margin-left: 0;
+    margin-right: 5vw;
+    margin-bottom: 0;
+    padding: 0;
+
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+
+    margin: 0 4vw;
+    font-size: 30px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    position: relative;
+    z-index: 10;
+
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right li {
+    float: left;
+    text-align: center;
+}
+
+
+

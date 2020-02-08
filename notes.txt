@@ -1,0 +1,3 @@
+To Run with Auto-Reload for Stylesheets
+
+$ FLASK_APP=application.py FLASK_ENV=development flask run

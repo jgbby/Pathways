@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-5">
+            <form action="/register" method="post">
+                <input autocomplete="off" autofocus name="username" placeholder="Username" type="text" class="form-control">
+                <input autocomplete="off" autofocus name="password" placeholder="Password" type="password" class="form-control">
+                <input autocomplete="off" autofocus name="confirmation" placeholder="Re-type" type="password" class="form-control">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // Prevent submission of form
+    document.querySelector('form').addEventListener("click", function(event){
+        event.preventDefault()
+    });
+
+    // On button click, make a get request to /check to see if username is taken
+    $('button').click(function(){
+        var username = document.querySelector('input[name="username"]').value;
+        var pass = document.querySelector('input[name="password"]').value;
+        var confirmation = document.querySelector('input[name="confirmation"]').value;
+        $.get("/check?username=" + username, function(data){
+            if (data == true) {
+                alert("Username is already used")
+            }
+            else if (pass != confirmation){
+                alert("Passwords do not match")
+            }
+            else {
+                document.querySelector('form').submit();
+            }
+        })
+    });
+
+</script>
+
+{% endblock %}
