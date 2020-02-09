@@ -32,11 +32,11 @@
 }
 
 .path {
-    transform: translate(-190%, -160%);
+    transform: translate(-190%, -80%);
 }
 
 .way {
-    transform: translate(90%, -120%);
+    transform: translate(90%, -40%);
 }
 
 /* Logo Styling */
@@ -57,7 +57,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -50%);
 }
 
 
