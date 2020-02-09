@@ -27,8 +27,8 @@
     letter-spacing: 0.3em;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, 500%);
+    top: 100%;
+    transform: translate(-50%, -10vh);
 }
 
 .path {
