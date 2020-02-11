@@ -10,14 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
-  <div class="background">
+  {% block bg %}{% endblock %}
     <body>
 
       <nav>
         <a href="#" target="_blank"><img src="./static/image/logo.png" alt="logo" class="logo"/></a>
         <ul class="nav-right">
-            <li><a href="#">Poems</a></li>
-            <li><a href="#">People</a></li>
+            <li><a href="/">Home</a></li>
+            <!-- Issue is that linking to /#people breaks the webpage-->
+            <li><a href="/#people">People</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
       </nav>

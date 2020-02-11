@@ -100,12 +100,13 @@
 
 /* RBRIDGES */
 
-.photo {
+#rb1 {
+    background-image: url("./image/rbridgesart.jpg");
     size: cover;
-    margin-right: 40px;
+    background-repeat:  no-repeat;
 }
 
-.rbridges h1 {
+.rbridges #rb1 h1 {
     font-family: 'Darker Grotesque', sans-serif;
     font-style: normal;
     font-size: 40px;
@@ -115,6 +116,7 @@
     top: 60%;
     left: 10%;
     transform: translate(-10%, -60%);
+    background:rgb(255, 255, 255,0.5);
 }
 
 
@@ -174,7 +176,7 @@ nav li a:hover {
 }
 
 /* Background */
-.background {
+.bgintro {
     position: relative;
     background-image: radial-gradient(#d1d1d1, #E5E5E5, black);
 }
