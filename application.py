@@ -7,9 +7,17 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/rbridges')
+@app.route('/ruby-bridges')
 def rbridges():
     return render_template("rbridges.html") 
+
+@app.route('/hunter-holmes')
+def hh():
+    return render_template("hh.html") 
+
+@app.route('/freeman-hrabowski')
+def fhrab():
+    return render_template("fhrab.html") 
 
 if __name__ == "__main__":
     app.run(debug=True)

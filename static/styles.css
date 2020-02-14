@@ -43,7 +43,7 @@
     background-color: white;
 }
 
-.container  {
+.guide .container  {
     height: 100vh;
     display: flex;
 }
@@ -91,22 +91,70 @@
     background-size: cover;
 }
 
-.fhrab {
+.freemanh {
     background-image: url("./image/fhrabport.jpg");
     background-position: center;
     background-repeat: none;
     background-size: cover;
 }
 
-/* RBRIDGES */
 
+
+/* RBRIDGES */
 #rb1 {
     background-image: url("./image/rbridgesart.jpg");
     size: cover;
     background-repeat:  no-repeat;
 }
 
-.rbridges #rb1 h1 {
+.rbridges .container img {
+    height: 50%;
+    width: 50%;
+}
+
+/* FREEMAN HRABOWSKI */
+.fhrab .container img {
+    height: 35%;
+    width: 35%;
+}
+
+#fh1 {
+    background-image: url("./image/crusade.jpg");
+    size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+}
+
+/* HUNTER & HOLMES */
+#hh1 {
+    background-image: url("./image/hhbg.jpg");
+    size: cover;
+    background-repeat: no-repeat;
+}
+
+.hh .container img {
+    height: 35%;
+    width: 35%;
+}
+
+/* PEOPLE */
+.people .container {
+    height: 100vh;
+    width: 95vw;
+    float: center;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.people .container img {
+    margin: 5px;
+    align-content: left;
+}
+
+.people h1 {
     font-family: 'Darker Grotesque', sans-serif;
     font-style: normal;
     font-size: 40px;
@@ -119,7 +167,31 @@
     background:rgb(255, 255, 255,0.5);
 }
 
+iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.people img {
+    float: left;
+    margin: 4px 10px 0px 0px;
+    border: 1px solid #000000;
+}
+
+.subtext {
+    color: grey;
+    font-size: 15px;
+}
+
+.bgpeople {
+    background-image: url('./image/split.jpg');
+    size: cover;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* Nav Bar */
 .logo {
